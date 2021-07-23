@@ -5,6 +5,9 @@ import java.util.List;
  * Created by Hayk on 23.07.2021.
  */
 public class ArraySortUtil {
+    private ArraySortUtil() {
+    }
+
     public static <T extends Comparable<T>> void insertionSort(List<T> list) {
         for (int i = 1; i < list.size(); ++i) {
             T key = list.get(i);
