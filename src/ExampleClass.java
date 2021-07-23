@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by Hayk on 23.07.2021.
  */
@@ -11,8 +13,8 @@ public class ExampleClass implements Comparable<ExampleClass> {
     public ExampleClass() {
     }
 
-    public void printArray(ExampleClass[] array) {
-        for (ExampleClass obj : array) {
+    public void printArray(List<ExampleClass> list) {
+        for (ExampleClass obj : list) {
             System.out.println("Value: " + obj.value);
         }
     }
